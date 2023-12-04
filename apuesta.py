@@ -7,7 +7,7 @@ class Apuesta:
 
     def tomarFicha(self, cuantas=1):
         if cuantas > self.fichas:
-            raise ValueError("No hay suficientes fichas para tomar.")
+            raise ValueError("No hay suficientes fichas para tomar.")  #Raise valueError te tira un mensaje de error
         self.fichas -= cuantas
 
     def tomarTodas(self):
